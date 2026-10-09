@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "Bolsa.API\\Bolsa.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Bolsa.MVC\\Bolsa.MVC.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

@@ -1,0 +1,67 @@
+﻿@model Bolsa.Entities.Plaza
+
+@{
+    ViewData["Title"] = "Editar Plaza";
+}
+
+<div class="container mt-4">
+    <h2>Editar Plaza de Trabajo</h2>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-6">
+            <form asp-action="Edit" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <!-- Importante para enviar el ID oculto -->
+                <input type="hidden" asp-for="IdPlaza" />
+                <input type="hidden" asp-for="IdAgente" />
+                <input type="hidden" asp-for="FechaPublicacion" />
+
+                <div class="mb-3">
+                    <label asp-for="Titulo" class="control-label">Título del Puesto</label>
+                    <input asp-for="Titulo" class="form-control" />
+                    <span asp-validation-for="Titulo" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Institucion" class="control-label">Institución o Empresa</label>
+                    <input asp-for="Institucion" class="form-control" />
+                    <span asp-validation-for="Institucion" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Descripcion" class="control-label">Descripción de la Plaza</label>
+                    <textarea asp-for="Descripcion" class="form-control" rows="4"></textarea>
+                    <span asp-validation-for="Descripcion" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="FechaCierre" class="control-label">Fecha de Cierre</label>
+                    <input asp-for="FechaCierre" class="form-control" type="date" />
+                    <span asp-validation-for="FechaCierre" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Estado" class="control-label">Estado</label>
+                    <select asp-for="Estado" class="form-control">
+                        <option value="Abierta">Abierta</option>
+                        <option value="Cerrada">Cerrada</option>
+                    </select>
+                    <span asp-validation-for="Estado" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+                    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

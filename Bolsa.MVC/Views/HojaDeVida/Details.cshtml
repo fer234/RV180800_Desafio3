@@ -1,0 +1,35 @@
+﻿@model Bolsa.Entities.HojaDeVida
+
+@{
+    ViewData["Title"] = "Detalles de Hoja de Vida";
+}
+
+<div class="container mt-4">
+    <h2>Detalles de la Hoja de Vida</h2>
+    <hr />
+    <div>
+        <dl class="row">
+            <dt class="col-sm-3 fw-bold">ID CV:</dt>
+            <dd class="col-sm-9">@Model.IdCV</dd>
+
+            <dt class="col-sm-3 fw-bold">Usuario:</dt>
+            <dd class="col-sm-9">@Model.IdUsuario</dd>
+
+            <dt class="col-sm-3 fw-bold">Formación Académica:</dt>
+            <dd class="col-sm-9">@Model.FormacionAcademica</dd>
+
+            <dt class="col-sm-3 fw-bold">Experiencia Laboral:</dt>
+            <dd class="col-sm-9">@Model.ExperienciaLaboral</dd>
+
+            <dt class="col-sm-3 fw-bold">Competencias:</dt>
+            <dd class="col-sm-9">@Model.Competencias</dd>
+
+            <dt class="col-sm-3 fw-bold">Archivo CV:</dt>
+            <dd class="col-sm-9">@Model.ArchivoCV</dd>
+        </dl>
+    </div>
+    <div class="mt-3">
+        <a asp-action="Edit" asp-route-id="@Model.IdCV" class="btn btn-warning">Editar</a>
+        <a asp-action="Index" class="btn btn-secondary">Volver al listado</a>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+C:\Users\ferna\OneDrive\Documentos\Mis Documentos\Desarrollo de Software Empresarial\Tei DSE104\PROYECTO\RV180800_Desafio3\Bolsa.Entities\bin\Debug\net10.0\Bolsa.Entities.deps.json
+C:\Users\ferna\OneDrive\Documentos\Mis Documentos\Desarrollo de Software Empresarial\Tei DSE104\PROYECTO\RV180800_Desafio3\Bolsa.Entities\bin\Debug\net10.0\Bolsa.Entities.dll
+C:\Users\ferna\OneDrive\Documentos\Mis Documentos\Desarrollo de Software Empresarial\Tei DSE104\PROYECTO\RV180800_Desafio3\Bolsa.Entities\bin\Debug\net10.0\Bolsa.Entities.pdb
+C:\Users\ferna\OneDrive\Documentos\Mis Documentos\Desarrollo de Software Empresarial\Tei DSE104\PROYECTO\RV180800_Desafio3\Bolsa.Entities\obj\Debug\net10.0\Bolsa.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ferna\OneDrive\Documentos\Mis Documentos\Desarrollo de Software Empresarial\Tei DSE104\PROYECTO\RV180800_Desafio3\Bolsa.Entities\obj\Debug\net10.0\Bolsa.Entities.AssemblyInfoInputs.cache
+C:\Users\ferna\OneDrive\Documentos\Mis Documentos\Desarrollo de Software Empresarial\Tei DSE104\PROYECTO\RV180800_Desafio3\Bolsa.Entities\obj\Debug\net10.0\Bolsa.Entities.AssemblyInfo.cs
+C:\Users\ferna\OneDrive\Documentos\Mis Documentos\Desarrollo de Software Empresarial\Tei DSE104\PROYECTO\RV180800_Desafio3\Bolsa.Entities\obj\Debug\net10.0\Bolsa.Entities.csproj.CoreCompileInputs.cache
+C:\Users\ferna\OneDrive\Documentos\Mis Documentos\Desarrollo de Software Empresarial\Tei DSE104\PROYECTO\RV180800_Desafio3\Bolsa.Entities\obj\Debug\net10.0\Bolsa.Entities.sourcelink.json
+C:\Users\ferna\OneDrive\Documentos\Mis Documentos\Desarrollo de Software Empresarial\Tei DSE104\PROYECTO\RV180800_Desafio3\Bolsa.Entities\obj\Debug\net10.0\Bolsa.Entities.dll
+C:\Users\ferna\OneDrive\Documentos\Mis Documentos\Desarrollo de Software Empresarial\Tei DSE104\PROYECTO\RV180800_Desafio3\Bolsa.Entities\obj\Debug\net10.0\refint\Bolsa.Entities.dll
+C:\Users\ferna\OneDrive\Documentos\Mis Documentos\Desarrollo de Software Empresarial\Tei DSE104\PROYECTO\RV180800_Desafio3\Bolsa.Entities\obj\Debug\net10.0\Bolsa.Entities.pdb
+C:\Users\ferna\OneDrive\Documentos\Mis Documentos\Desarrollo de Software Empresarial\Tei DSE104\PROYECTO\RV180800_Desafio3\Bolsa.Entities\obj\Debug\net10.0\ref\Bolsa.Entities.dll
+C:\Users\ferna\OneDrive\Documentos\Mis Documentos\Desarrollo de Software Empresarial\Tei DSE104\PROYECTO\RV180800_Desafio3\Bolsa.Entities\obj\Debug\net10.0\Bolsa.En.FA66938E.Up2Date

@@ -1,0 +1,32 @@
+﻿@model Bolsa.Entities.Postulacion
+
+@{
+    ViewData["Title"] = "Eliminar Postulación";
+}
+
+<div class="container mt-4">
+    <h2>Eliminar Postulación</h2>
+    <h3 class="text-danger">¿Estás seguro de que deseas eliminar esta postulación?</h3>
+    <hr />
+    <div>
+        <dl class="row">
+            <dt class="col-sm-3 fw-bold">ID Postulación:</dt>
+            <dd class="col-sm-9">@Model.IdPostulacion</dd>
+
+            <dt class="col-sm-3 fw-bold">ID Plaza:</dt>
+            <dd class="col-sm-9">@Model.IdPlaza</dd>
+
+            <dt class="col-sm-3 fw-bold">Candidato:</dt>
+            <dd class="col-sm-9">@Model.IdCandidato</dd>
+
+            <dt class="col-sm-3 fw-bold">Estado:</dt>
+            <dd class="col-sm-9">@Model.Estado</dd>
+        </dl>
+
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="IdPostulacion" />
+            <input type="submit" value="Eliminar definitivamente" class="btn btn-danger" />
+            <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+        </form>
+    </div>
+</div>

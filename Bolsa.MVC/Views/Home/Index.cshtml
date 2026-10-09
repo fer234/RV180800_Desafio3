@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Inicio";
+}
+
+<div class="container mt-5">
+    <div class="p-5 mb-4 bg-light rounded-3 shadow-sm border">
+        <div class="container-fluid py-3">
+            <h1 class="display-5 fw-bold text-primary">¡Bienvenido a Bolsa.MVC!</h1>
+            <p class="col-md-8 fs-4 text-secondary mt-3">
+                Tu plataforma en línea para la gestión de ofertas de empleo, hojas de vida y postulaciones en El Salvador.
+            </p>
+            <hr class="my-4">
+            <p class="fs-6 text-muted">
+                Utiliza la barra de navegación superior para administrar las Plazas, los Postulantes y las Hojas de Vida de manera rápida y directa.
+            </p>
+            <div class="mt-4">
+                <a class="btn btn-primary btn-lg me-2" asp-controller="Plazas" asp-action="Index">Ver Plazas</a>
+                <a class="btn btn-outline-secondary btn-lg" asp-controller="Postulaciones" asp-action="Index">Ver Postulaciones</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,52 @@
+﻿@model Bolsa.Entities.HojaDeVida
+
+@{
+    ViewData["Title"] = "Crear Hoja de Vida";
+}
+
+<div class="container mt-4">
+    <h2>Crear Hoja de Vida</h2>
+    <hr />
+    <div class="row">
+        <div class="col-md-8">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="mb-3">
+                    <label asp-for="IdUsuario" class="form-label fw-bold">Usuario</label>
+                    <input asp-for="IdUsuario" class="form-control" value="Usuario-General" />
+                    <span asp-validation-for="IdUsuario" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="FormacionAcademica" class="form-label fw-bold">Formación Académica</label>
+                    <textarea asp-for="FormacionAcademica" class="form-control" rows="3"></textarea>
+                    <span asp-validation-for="FormacionAcademica" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="ExperienciaLaboral" class="form-label fw-bold">Experiencia Laboral</label>
+                    <textarea asp-for="ExperienciaLaboral" class="form-control" rows="3"></textarea>
+                    <span asp-validation-for="ExperienciaLaboral" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Competencias" class="form-label fw-bold">Competencias</label>
+                    <input asp-for="Competencias" class="form-control" />
+                    <span asp-validation-for="Competencias" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="ArchivoCV" class="form-label fw-bold">Archivo CV / Enlace</label>
+                    <input asp-for="ArchivoCV" class="form-control" />
+                    <span asp-validation-for="ArchivoCV" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mt-3">
+                    <input type="submit" value="Guardar" class="btn btn-success" />
+                    <a asp-action="Index" class="btn btn-secondary">Volver al listado</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

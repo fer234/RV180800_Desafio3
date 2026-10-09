@@ -1,0 +1,61 @@
+﻿@model Bolsa.Entities.Postulacion
+
+@{
+    ViewData["Title"] = "Crear Postulación";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="card shadow border-0 rounded-3">
+                <div class="card-header bg-primary text-white py-3">
+                    <h4 class="mb-0">✨ Nueva Postulación</h4>
+                </div>
+                <div class="card-body p-4">
+                    
+                    @if (TempData["ErrorMessage"] != null)
+                    {
+                        <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+                    }
+
+                    <form asp-action="Create">
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                        <div class="mb-3">
+                            <label asp-for="IdPlaza" class="form-label fw-bold">Seleccionar Plaza</label>
+                            <select asp-for="IdPlaza" class="form-select" asp-items="ViewBag.Plazas">
+                                <option value="">-- Seleccione una plaza disponible --</option>
+                            </select>
+                            <span asp-validation-for="IdPlaza" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="IdCandidato" class="form-label fw-bold">Candidato</label>
+                            <input asp-for="IdCandidato" class="form-control" value="Candidato-General" readonly />
+                            <span asp-validation-for="IdCandidato" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-4">
+                            <label asp-for="Estado" class="form-label fw-bold">Estado Inicial</label>
+                            <select asp-for="Estado" class="form-select">
+                                <option value="En revisión" selected>En revisión</option>
+                                <option value="Aprobado">Aprobado</option>
+                                <option value="Rechazado">Rechazado</option>
+                            </select>
+                            <span asp-validation-for="Estado" class="text-danger"></span>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a asp-action="Index" class="btn btn-outline-secondary">
+                                <i class="bi bi-arrow-left"></i> Volver al listado
+                            </a>
+                            <button type="submit" class="btn btn-success px-4">
+                                <i class="bi bi-check-lg"></i> Guardar Postulación
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

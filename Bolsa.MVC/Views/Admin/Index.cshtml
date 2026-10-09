@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Microsoft.AspNetCore.Identity.IdentityUser>
+@{
+    ViewData["Title"] = "Panel de Administración";
+}
+
+<div class="container mt-4">
+    <h2>Panel del Administrador</h2>
+    <p class="text-muted">Gestión de usuarios y monitoreo del sistema.</p>
+
+    <table class="table table-striped mt-3">
+        <thead>
+            <tr>
+                <th>Email</th>
+                <th>Usuario</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.Email</td>
+                    <td>@user.UserName</td>
+                    <td>
+                        <span class="badge bg-secondary">Gestionar Rol</span>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

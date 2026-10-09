@@ -1,0 +1,32 @@
+﻿@model Bolsa.Entities.Postulacion
+
+@{
+    ViewData["Title"] = "Detalles de Postulación";
+}
+
+<div class="container mt-4">
+    <h2>Detalles de la Postulación</h2>
+    <hr />
+    <div>
+        <dl class="row">
+            <dt class="col-sm-3 fw-bold">ID Postulación:</dt>
+            <dd class="col-sm-9">@Model.IdPostulacion</dd>
+
+            <dt class="col-sm-3 fw-bold">ID Plaza:</dt>
+            <dd class="col-sm-9">@Model.IdPlaza</dd>
+
+            <dt class="col-sm-3 fw-bold">Candidato:</dt>
+            <dd class="col-sm-9">@Model.IdCandidato</dd>
+
+            <dt class="col-sm-3 fw-bold">Fecha de Postulación:</dt>
+            <dd class="col-sm-9">@Model.FechaPostulacion.ToString("dd/MM/yyyy HH:mm")</dd>
+
+            <dt class="col-sm-3 fw-bold">Estado:</dt>
+            <dd class="col-sm-9"><span class="badge bg-info text-dark">@Model.Estado</span></dd>
+        </dl>
+    </div>
+    <div class="mt-3">
+        <a asp-action="Edit" asp-route-id="@Model.IdPostulacion" class="btn btn-warning">Editar</a>
+        <a asp-action="Index" class="btn btn-secondary">Volver al listado</a>
+    </div>
+</div>

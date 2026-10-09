@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bolsa.BLL\Bolsa.BLL.csproj" />
+    <ProjectReference Include="..\Bolsa.DAL\Bolsa.DAL.csproj" />
+    <ProjectReference Include="..\Bolsa.Entities\Bolsa.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

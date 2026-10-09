@@ -1,0 +1,46 @@
+﻿@model Bolsa.Entities.Postulacion
+
+@{
+    ViewData["Title"] = "Editar Postulación";
+}
+
+<div class="container mt-4">
+    <h2>Editar Postulación</h2>
+    <hr />
+    <div class="row">
+        <div class="col-md-6">
+            <form asp-action="Edit">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="IdPostulacion" />
+                <input type="hidden" asp-for="FechaPostulacion" />
+
+                <div class="mb-3">
+                    <label asp-for="IdPlaza" class="form-label fw-bold">Plaza</label>
+                    <select asp-for="IdPlaza" class="form-select" asp-items="ViewBag.Plazas"></select>
+                    <span asp-validation-for="IdPlaza" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="IdCandidato" class="form-label fw-bold">Candidato</label>
+                    <input asp-for="IdCandidato" class="form-control" />
+                    <span asp-validation-for="IdCandidato" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Estado" class="form-label fw-bold">Estado</label>
+                    <select asp-for="Estado" class="form-select">
+                        <option value="En revisión">En revisión</option>
+                        <option value="Aceptada">Aceptada</option>
+                        <option value="Rechazada">Rechazada</option>
+                    </select>
+                    <span asp-validation-for="Estado" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mt-3">
+                    <input type="submit" value="Actualizar" class="btn btn-primary" />
+                    <a asp-action="Index" class="btn btn-secondary">Volver al listado</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

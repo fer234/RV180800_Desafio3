@@ -1,0 +1,56 @@
+﻿@model IEnumerable<Bolsa.Entities.HojaDeVida>
+
+@{
+    ViewData["Title"] = "Hojas de Vida";
+}
+
+<div class="container mt-4">
+    <h2>Listado de Hojas de Vida</h2>
+    <hr />
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+    }
+
+    <p>
+        <a asp-action="Create" class="btn btn-success">Crear Nueva Hoja de Vida</a>
+    </p>
+
+    <table class="table table-striped table-bordered shadow-sm">
+        <thead class="table-dark">
+            <tr>
+                <th>ID CV</th>
+                <th>Usuario</th>
+                <th>Formación Académica</th>
+                <th>Competencias</th>
+                <th class="text-center">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.IdCV</td>
+                        <td>@item.IdUsuario</td>
+                        <td>@item.FormacionAcademica</td>
+                        <td>@item.Competencias</td>
+                        <td class="text-center">
+                            <a asp-action="Edit" asp-route-id="@item.IdCV" class="btn btn-warning btn-sm">Editar</a>
+                            <a asp-action="Details" asp-route-id="@item.IdCV" class="btn btn-info btn-sm">Detalles</a>
+                            <a asp-action="Delete" asp-route-id="@item.IdCV" class="btn btn-danger btn-sm">Eliminar</a>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="5" class="text-center text-muted">No hay hojas de vida registradas.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

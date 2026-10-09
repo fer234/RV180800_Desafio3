@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="Bolsa.API/Bolsa.API.csproj" />
+  <Project Path="Bolsa.BLL/Bolsa.BLL.csproj" />
+  <Project Path="Bolsa.DAL/Bolsa.DAL.csproj" />
+  <Project Path="Bolsa.Entities/Bolsa.Entities.csproj" />
+  <Project Path="Bolsa.MVC/Bolsa.MVC.csproj" />
+  <Project Path="Bolsa.Test/Bolsa.Test.csproj" />
+</Solution>
